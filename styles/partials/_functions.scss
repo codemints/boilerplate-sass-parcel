@@ -1,0 +1,27 @@
+//Set text color based on value of background color
+@function setTextColor($bg, $light, $dark) {
+  @if ( lightness($bg) > 30 ) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}
+
+@function returnBgColor($color) {
+  @return $color;
+}
+
+//Light color
+@function lighten-color($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+//Darken color
+@function darken-color($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+//Set container padding
+@function set-inline-padding($multiplicand, $multiplier) {
+  @return $multiplicand * $multiplier;
+}

@@ -1,0 +1,32 @@
+/**********
+* Colors
+**********/
+$clr-primary--400: pink;
+$clr-secondary--200: salmon;
+/**********
+* Typography
+**********/
+$font-size--base: 10px;
+$font-size--h1: 6rem;
+$font-size--h2: 4.8rem;
+$font-size--h3: 3.2rem;
+$font-size--h4: 2.4rem;
+$font-size--h5: 1.8rem;
+$font-size--h6: 1.4rem;
+$font-size--body: 1.8rem;
+
+/**********
+* Spacing
+**********/
+
+/**********
+* Transitions
+**********/
+$transition--base: all 0.3s ease-in-out;
+$transition--bounce: all 0.3s cubic-bezier(.94,.07,.71,2);
+
+/**********
+* Icons
+**********/
+$opacity--500: 0.5;
+$opacity--900: 1;

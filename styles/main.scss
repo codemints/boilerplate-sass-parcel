@@ -1,0 +1,16 @@
+@import "../assets/font-awesome/scss/fontawesome.scss";
+@import "../assets/font-awesome/scss/solid.scss";
+@import "../assets/font-awesome/scss/regular.scss";
+@import "../assets/font-awesome/scss/brands.scss";
+@import "../assets/font-awesome/scss/duotone.scss";
+
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/functions";
+@import "./partials/mixins";
+@import "./partials/base";
+@import "./partials/typography";
+@import "./partials/compositions";
+@import "./partials/components";
+@import "./partials/utilities";
+@import "./partials/exceptions";

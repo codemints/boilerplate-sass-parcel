@@ -1,0 +1,98 @@
+@mixin position(
+  $top: 0,
+  $right: null,
+  $bottom: null,
+  $left: 0,
+  $transform: false,
+  $x: null,
+  $y: null,
+  $index: false
+) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  @if $transform { transform: translate($x, $y);}
+  @if $index { z-index: $index; }
+}
+
+@mixin setBgColor($color, $light, $dark) {
+  background-color: $color;
+  color: setTextColor($color, $light, $dark);
+}
+
+@mixin dimension($w, $h: auto) {
+  width: $w;
+  height: $h;
+}
+
+@mixin push(
+  $mt: 0,
+  $mr: 0,
+  $mb: 0,
+  $ml: 0
+) {
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+}
+
+@mixin flexed(
+  $x: center,
+  $y: center,
+  $axis: null,
+  $wrap: null,
+  $gap: 0
+) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  flex-flow: $axis $wrap;
+  gap: $gap;
+}
+
+@mixin styleText(
+  $size: false,
+  $weight: false,
+  $transform: false,
+  $spacing: false,
+  $lh: normal
+) {
+  @if $size { font-size: $size; }
+  @if $weight { font-weight: $weight; }
+  @if $transform { text-transform: $transform; }
+  @if $spacing { letter-spacing: $spacing; }
+  line-height: $lh;
+}
+
+@mixin styleBtn(
+  $display: block,
+  $td: none,
+  $py: 1rem,
+  $multiplier: 2,
+  $radius: 0,
+  $bc: transparent,
+  $bw: 0,
+  $bs: none
+) {
+  display: $display;
+  text-decoration: $td;
+  padding-block: $py;
+  padding-inline: set-inline-padding($py, $multiplier);
+  border-radius: $radius;
+  border-color: $bc;
+  border-width: $bw;
+  border-style: $bs;
+}
+
+@mixin psuedo(
+  $display: block,
+  $position: absolute,
+  $content: ''
+) {
+  content: $content;
+  display: $display;
+  position: $position;
+}

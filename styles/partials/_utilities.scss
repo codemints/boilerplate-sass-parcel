@@ -1,0 +1,73 @@
+/**********
+* Margin
+**********/
+
+/**********
+* Padding
+**********/
+
+/**********
+* Text
+**********/
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal {
+  text-transform: normal;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+.font-italic {
+  font-style: italic;
+}
+.font-not-italic {
+  font-style: normal;
+}
+
+/**********
+* Borders
+**********/
+.radius-none {
+  border-radius: 0;
+}
+.radius-xsm {
+  border-radius: 0.1rem;
+}
+.radius-sm {
+  border-radius: 0.2rem;
+}
+.radius {
+  border-radius: 0.4rem;
+}
+.radius-md {
+  border-radius: 0.6rem;
+}
+.radius-lg {
+  border-radius: 0.8rem;
+}
+.radius-xlg {
+  border-radius: 1rem;
+}
+
+/**********
+* Icons
+**********/

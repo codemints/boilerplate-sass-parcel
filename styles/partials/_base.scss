@@ -1,0 +1,10 @@
+html {
+  font-size: $font-size--base;
+}
+
+i {
+  --fa-primary-color: #{$clr-primary--400};
+  --fa-secondary-color: #{$clr-secondary--200};
+  --fa-primary-opacity: #{$opacity--500};
+  --fa-secondary-opacity: #{$opacity--900};
+}
